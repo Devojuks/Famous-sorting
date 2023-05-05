@@ -1,0 +1,7 @@
+Start with the first element of the unsorted array, i.e., arr[0].
+Compare the current element (arr[i]) with the largest element in the sorted array (arr[j]). 
+   Here, j=i-1.
+If arr[j] is larger than arr[i], move arr[j] one position to the right, i.e., arr[j+1]=arr[j].
+Repeat step 2-3 until arr[j] is smaller or equal to arr[i] or j=-1.
+Insert arr[i] at position j+1, i.e., arr[j+1]=arr[i].
+Repeat step 1-5 for all the remaining elements in the unsorted array, i.e., arr[1] to arr[n-1].
